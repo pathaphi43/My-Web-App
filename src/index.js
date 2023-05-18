@@ -1,15 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
-import Game from "./home/Tic-Tac-Toe";
 import reportWebVitals from "./reportWebVitals";
+import Main from "./components/main";
+import App from "./App";
+import NavBar from "./components/navbar";
+import ToggleColorMode from "./components/navbar";
+
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
-    <Game />
+    <ToggleColorMode/>
+    <Main/>
   </React.StrictMode>
 );
 
